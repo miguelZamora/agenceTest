@@ -1,0 +1,49 @@
+head
+	title!= title
+	link(rel="stylesheet", href="bootstrap-3.3.7/dist/css/bootstrap.min.css")
+	link(rel="stylesheet", href="bootstrap-3.3.7/dist/css/font-awesome.min.css")
+	script(src="javascripts/jquery-1.12.4.min.js")
+body
+	block content
+	div.container#contenedor
+		div.row
+		form(id="add-estimation",name="add-estimation", method="post")
+		div.col-md-12  
+			img(src="images/logo.gif", alt="logo", title="logo", style="float:right")
+		
+		div#agencia.col-md-1.btn.btn-large
+			img(src="images/agence.gif", alt="logo", title="logo",)
+		
+		div#task_icon.col-md-1.btn.btn-large
+			img(src="images/task_icon.gif", alt="logo", title="logo", style="float:right")
+		
+		div#administrativo.col-md-1.btn.btn-large
+			img(src="images/administrativo.gif", alt="logo", title="logo", style="float:right")
+		
+		div#comercial.col-md-1.btn.btn-large
+			img(src="images/comercial.gif", alt="logo", title="logo", style="float:right")
+		
+		div#fichario.col-md-1.btn.btn-large
+			img(src="images/fichario.gif", alt="logo", title="logo", style="float:right")
+		
+		div#info_pessoa.col-md-1.btn.btn-large
+			img(src="images/info_pessoa.gif", alt="logo", title="logo", style="float:right")
+		
+		div#cancel.col-md-1.btn.btn-large
+			img(src="images/cancel.gif", alt="logo", title="logo", style="float:right")
+		
+		div.col-md-12
+			form(id="add-estimation",name="add-estimation", method="post")
+				div.col-md-1
+					input(type="submit", value="Por Cliente"  class="btn btn-mini")
+				div.col-md-1
+					input(type="submit", value="Por Consultor"  class="btn btn-mini")
+						
+				div.col-md-12
+					span.titulo nombre
+
+				div.col-md-9 
+					input(type="text", name="title" class="form-control")
+
+				div.col-md-3
+					input(type="text", name="2" class="form-control") 
