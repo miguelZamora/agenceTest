@@ -6,3 +6,11 @@ body {
 .navbar {
   margin-bottom: 20px;
 }
+
+#linkmenu
+	{
+		font-size: 90%;
+	}
+.colores {
+    color: #585858;
+}	

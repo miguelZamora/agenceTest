@@ -24,66 +24,80 @@ html(lang="en")
 		<![endif]-->
 	body
 		div.container
+			img.pull-right.img-responsive(src="images/logo.gif")
+		div.container
 			nav.navbar.navbar-default
 				div.container-fluid
 					div.navbar-header
 						button.navbar-toggle.collapsed(data-toggle="collapse",data-target="#navbar",aria-expanded="false",aria-controls="navbar")
-						span.sr-only Toggle navigation 
+							span.sr-only Toggle navigation 
 							span.icon-bar
 							span.icon-bar
 							span.icon-bar
-							a.navbar-brand(href="#") Project name
+
 					div#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
-							li.active
-								a(href="#") Home
 							li
-								a(href="#") About 
+								a#linkmenu.agence.text-center(href="#") 
+									i.glyphicon.glyphicon-home.colores  
+										p Agence
 							li
-								a(href="#") Contact
-							li.dropdown
-								a.dropdown-toggle(href="#",data-toggle="dropdown",role="button",aria-haspopup="true",aria-expanded="false") Dropdown 
-								span.caret
-								ul.dropdown-menu
-									li
-										a(href="#") Action
-									li
-										a(href="#") Another action
-									li
-										a(href="#") Something else here
-									li.divider(role="separator") 
-									li.dropdown-header Nav header
-									li
-										a(href="#") Separated link
-									li
-										a(href="#") One more separated link
-						ul.nav.navbar-nav.navbar-right
-							li.active
-								a(href="./") Default 
-								span.sr-only" (current)
+								a#linkmenu.text-center(href="#") 
+									i.glyphicon.glyphicon-check.colores  
+										p Projetos 
 							li
-								a(href="../navbar-static-top/") Static top
+								a#linkmenu.text-center(href="#") 
+									i.glyphicon.glyphicon-check.colores  
+										p Administrativo
 							li
-								a(href="../navbar-fixed-top/") Fixed top
-			div.jumbotron
-				form(action="",method="post",id="formulario") 
-					div.text-center.col-md-5
-						select.form-control(name="origen[]" id="origen" multiple="multiple" size="8")
-							option(value="1") Opci&oacute;n 1
-							option(value="2") Opci&oacute;n 2
-							option(value="3") Opci&oacute;n 3 
-							option(value="4") Opci&oacute;n 4 
-							option(value="1") Opci&oacute;n 5 
-					div.text-center.col-md-2
-						input.pasar.izq.form-control(type="button",value="Pasar >>")
-						input.quitar.der.form-control(type="button",value="<< Quitar")
-						br
-						input.pasartodos.izq.form-control(type="button",value="Todos >>>")
-						input.quitartodos.der.form-control(type="button",value="<<< Todos")
-					div.text-center.col-md-5
-						select.form-control(name="destino[]",id="destino",multiple="multiple",size="8")
-						p.clear
-							input.submit(type="submit",value="Procesar formulario")
+								a#linkmenu.text-center(href="#") 
+									i.glyphicon.glyphicon-check.colores  
+										p Comercial
+							li
+								a#linkmenu.text-center(href="#") 
+									i.glyphicon.glyphicon-check.colores  
+										p Financeiro
+							li
+								a#linkmenu.text-center(href="#") 
+									i.glyphicon.glyphicon-check.colores  
+										p Usuário  
+							li
+								a#linkmenu.text-center(href="#") 
+									i.glyphicon.glyphicon-check.colores  
+										p Sair
+			<!-- main -->
+			form(action="",method="post",id="formulario")										
+			div.container.form-group.row
+				div.col-md-12
+					&nbsp;
+				div.btn-group
+					button#por_consultor.btn.btn-default(type="button") Por Consultor
+					button#por_cliente.btn.btn-default(type="button") Por Cliente
+				div.col-md-12
+					&nbsp;
+				div.text-center.col-md-5
+					select.form-control(name="origen[]" id="origen" multiple="multiple" size="8")
+						option(value="1") Opci&oacute;n 1
+						option(value="2") Opci&oacute;n 2
+						option(value="3") Opci&oacute;n 3 
+						option(value="4") Opci&oacute;n 4 
+						option(value="1") Opci&oacute;n 5 
+				div.text-center.col-md-2
+					input.pasar.izq.form-control(type="button",value="Pasar >>")
+					input.quitar.der.form-control(type="button",value="<< Quitar")
+					br
+					input.pasartodos.izq.form-control(type="button",value="Todos >>>")
+					input.quitartodos.der.form-control(type="button",value="<<< Todos")
+				div.text-center.col-md-5
+					select.form-control(name="destino[]",id="destino",multiple="multiple",size="8")
+					p.clear
+						input.submit(type="submit",value="Procesar formulario")
+
+
+
+
+
+
 
 
 

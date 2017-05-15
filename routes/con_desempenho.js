@@ -4,15 +4,17 @@ var router = express.Router();
 
 
 
+var usuariosModel = require('../models/usuarios');
+
+
+
+
 router.get('/', function(req, res, next) {
 
 	var contenido = '';
 	contenido +'<form id="" method="post" >';
 	contenido +'<input type="text" id="" name="" class="form-control" value="casa">';
 	contenido +'</form>';
-
-
-
 	res.render('con_desempenho', { title: 'Hey', message: contenido});
 
 	});
